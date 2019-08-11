@@ -1,0 +1,42 @@
+.main {
+  padding: 20px 0;
+  min-height: calc(100vh - 60px);
+  @include tablet() {
+    min-height: calc(100vh - 90px);
+  }
+  @include tablet() {
+    padding: 40px 0;
+  }
+  @include desktop() {
+    padding: 70px 0;
+  }
+}
+
+.about, .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  @include desktopXL {
+    max-width: 1300px;
+  }
+}
+
+.grid-item-list {
+  display: grid;
+  @include gridGapColumns(15px, 1);
+  @include desktop() {
+    @include gridGapColumns(30px, 3);
+  }
+  @include desktopL() {
+    @include gridGapColumns(40px, 4);
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

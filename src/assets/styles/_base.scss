@@ -1,0 +1,18 @@
+body {
+    font-family: $main-font;
+    font-weight: $main-weight;
+    background: $background;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image {
+    line-height: 0;
+    img {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}

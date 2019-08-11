@@ -1,0 +1,28 @@
+@mixin tablet () {
+  @media only screen and (min-width: $tablet) {
+    @content
+  }
+};
+
+@mixin desktop () {
+  @media only screen and (min-width: $desktop) {
+    @content
+  }
+};
+
+@mixin desktopL () {
+  @media only screen and (min-width: $desktopL) {
+    @content
+  }
+};
+
+@mixin desktopXL () {
+  @media only screen and (min-width: $desktopXL) {
+    @content
+  }
+};
+
+@mixin gridGapColumns($gridGap, $gridColumns) {
+  grid-gap: $gridGap;
+  grid-template-columns: repeat($gridColumns, calc(100%/#{$gridColumns} - (#{$gridColumns} - 1)*#{$gridGap} / #{$gridColumns}));
+}

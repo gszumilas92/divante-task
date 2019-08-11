@@ -1,0 +1,81 @@
+.grid-item {
+  display: flex;
+  flex-flow: column;
+  .box {
+    display: flex;
+    flex-flow: column;
+    background: $white;
+    padding: 15px;
+  }
+  .title {
+    color: $dark-text;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .description {
+    color: $light-text;
+    font-size: 12px;
+    @include tablet() {
+      font-size: 14px; //update
+    }
+  }
+}
+
+.item-selected {
+  display: flex;
+  flex-flow: column;
+  color: $white;
+  .image-bg {
+    background-size: cover;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    @include desktop() {
+      padding-top: 470px;
+    }
+  }
+  .box {
+    display: flex;
+    flex-flow: column;
+    background: $light-blue;
+    padding: 20px;
+    @include tablet() {
+      padding: 40px;
+    }
+    @include desktop() {
+      flex-flow: row;
+    }
+  }
+  .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    @include tablet() {
+      font-size: 20px; //update
+    }
+  }
+  .description {
+    color: $gray;
+    font-size: 12px;
+    margin-bottom: 20px;
+    @include tablet() {
+      font-size: 14px; //update
+    }
+    @include desktop() {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.align-column-end {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.loading-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}

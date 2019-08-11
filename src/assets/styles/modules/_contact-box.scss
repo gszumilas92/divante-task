@@ -1,0 +1,26 @@
+.contact-box {
+  padding: 50px;
+  background: $white;
+  text-align: center;
+  color: $light-text;
+  width: 90%;
+  max-width: 640px;
+  img {
+    margin-bottom: 30px;
+  }
+  .title {
+    color: $dark-text;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    color: inherit;
+  }
+}

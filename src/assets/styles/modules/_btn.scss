@@ -1,0 +1,15 @@
+.btn {
+  display: block;
+  text-align: center;
+  border: none;
+  padding: 15px;
+}
+
+.btn-primary {
+  background: $accent;
+  color: $white;
+}
+
+.btn.disabled {
+  opacity: .5;
+}
